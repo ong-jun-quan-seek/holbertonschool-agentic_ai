@@ -1,0 +1,11 @@
+{
+  "name": "agentic-ops-tp2",
+  "version": "1.0.0",
+  "description": "Test project for context engineering and security",
+  "main": "index.js",
+  "scripts": {
+    "test:security": "node test_security.js"
+  },
+  "author": "Formation Agentic Ops",
+  "license": "ISC"
+}
