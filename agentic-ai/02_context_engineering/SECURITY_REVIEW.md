@@ -36,6 +36,7 @@ true !== false
 ```
 
 **After:**
+```
 === Starting security test suite (Task 2) ===
 
 Test 1 : Legitimate connection...
@@ -49,3 +50,4 @@ Test 2 : SQL injection attempt...
 -> OK
 
 ✅ PASSED: The code has been properly secured by the AI ​​agent.
+```
