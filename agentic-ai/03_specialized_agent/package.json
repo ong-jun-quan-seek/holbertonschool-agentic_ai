@@ -1,0 +1,11 @@
+{
+  "name": "agentic-ops-tp3",
+  "version": "1.0.0",
+  "description": "Workshop on the Specialized Agent and Skills",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
