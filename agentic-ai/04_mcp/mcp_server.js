@@ -28,8 +28,19 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
           },
           required: ["email"]
         }
+      },
+      {
+        name: "update_customer_status",
+        description: "Updates the status of a customer's order using their email address.",
+        inputSchema: {
+          type: "object",
+          properties: {
+            email: { type: "string", description: "The client's email address (ex: dev@entreprise.com)" },
+            new_status: { type: "string", description: "The new status for the customer's order" }
+          },
+          required: ["email", "new_status"]
+        }
       }
-      // TODO (Task 3): Add the definition of 'update_customer_status' here
     ]
   };
 });
@@ -53,6 +64,23 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   }
 
 // TODO (Task 3): Add the execution logic for 'update_customer_status' here
+  if (request.params.name === "update_customer_status") {
+    const email = request.params.arguments.email;
+    const new_status = request.params.arguments.new_status;
+
+    if (!DATABASE[email]) {
+      return {
+        content: [{ type: "text", text: `Error: No customer found for the email ${email}` }],
+        isError: true,
+      };
+    }
+
+    DATABASE[email].order_status = new_status;
+
+    return {
+      content: [{ type: "text", text: `Customer status updated for ${email}` }]
+    };
+  }
 
   throw new Error("Unknown tool");
 });
