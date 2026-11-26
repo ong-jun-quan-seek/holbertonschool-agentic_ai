@@ -1,0 +1,9 @@
+{
+  "name": "agentic-ops-sentinel",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "latest",
+    "dotenv": "^18.0.10"
+  }
+}

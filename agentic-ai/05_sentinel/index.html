@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A dashboard of the five newest issues in microsoft/vscode.">
+    <title>VS Code Issues | Sentinel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Sentinel dashboard home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>Sentinel <span class="brand-divider">/</span> GitHub Watch</span>
+      </a>
+      <a class="repository-link" href="https://github.com/microsoft/vscode/issues" target="_blank" rel="noopener noreferrer">
+        microsoft / vscode <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main class="dashboard">
+      <section class="intro" aria-labelledby="dashboard-title">
+        <p class="eyebrow">Repository overview</p>
+        <h1 id="dashboard-title">VS Code issues</h1>
+        <p class="intro-copy">The five most recently created issues in the microsoft/vscode repository.</p>
+        <p class="updated">Fetched November 26, 2026</p>
+      </section>
+
+      <section class="metrics" aria-label="Issue summary">
+        <article class="metric-card">
+          <span class="metric-label">Issues fetched</span>
+          <strong class="metric-value">5</strong>
+          <span class="metric-note">Most recently created</span>
+        </article>
+        <article class="metric-card">
+          <span class="metric-label">Open issues</span>
+          <strong class="metric-value">5</strong>
+          <span class="metric-note">All issues are open</span>
+        </article>
+        <article class="metric-card">
+          <span class="metric-label">With labels</span>
+          <strong class="metric-value">2</strong>
+          <span class="metric-note">Three have no labels</span>
+        </article>
+      </section>
+
+      <section class="issues-section" aria-labelledby="issues-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Latest activity</p>
+            <h2 id="issues-heading">Recent issues <span class="result-count" id="result-count">5</span></h2>
+          </div>
+          <label class="search-field">
+            <span class="visually-hidden">Search issues</span>
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <circle cx="10.8" cy="10.8" r="6.8"></circle>
+              <path d="m16 16 4.5 4.5"></path>
+            </svg>
+            <input id="issue-search" type="search" placeholder="Search issues" autocomplete="off">
+          </label>
+        </div>
+
+        <div class="issue-list" id="issue-list">
+          <article class="issue-card" data-search="350512 recently opened per folder location handle editors switches renames deletes inactive locations polish sandy081 editor folder list quick open">
+            <div class="issue-topline">
+              <span class="issue-number">#350512</span>
+              <span class="issue-state"><span class="state-dot"></span>Open</span>
+            </div>
+            <h3><a href="https://github.com/microsoft/vscode/issues/350512" target="_blank" rel="noopener noreferrer">Recently opened per folder location: handle editors kept open across switches and renames/deletes in inactive locations</a></h3>
+            <p class="issue-summary">Editors kept open across folder-location switches can appear in the wrong recent-files list, while renames and deletions in inactive locations can leave stale Quick Open entries.</p>
+            <div class="issue-footer">
+              <div class="issue-meta"><span>by sandy081</span><time datetime="2026-11-26T07:56:45Z">Nov 26, 2026 · 07:56 UTC</time></div>
+              <div class="labels"><span class="label label-polish">polish</span></div>
+            </div>
+          </article>
+
+          <article class="issue-card" data-search="350511 new chat should open in chat editor setting chat.viewSessions.openChatIn editorArea dbaeumer">
+            <div class="issue-topline">
+              <span class="issue-number">#350511</span>
+              <span class="issue-state"><span class="state-dot"></span>Open</span>
+            </div>
+            <h3><a href="https://github.com/microsoft/vscode/issues/350511" target="_blank" rel="noopener noreferrer">New Chat should open in chat editor when using setting "chat.viewSessions.openChatIn": "editorArea"</a></h3>
+            <p class="issue-summary">With chat sessions configured to open in the editor area, pressing the plus button still creates the chat in the sessions viewlet instead.</p>
+            <div class="issue-footer">
+              <div class="issue-meta"><span>by dbaeumer</span><time datetime="2026-11-26T07:56:13Z">Nov 26, 2026 · 07:56 UTC</time></div>
+              <div class="labels"><span class="label label-unassigned">No labels</span></div>
+            </div>
+          </article>
+
+          <article class="issue-card" data-search="350506 abnormal token consumption copilot usage 23m 4.3m cache execution nijiong">
+            <div class="issue-topline">
+              <span class="issue-number">#350506</span>
+              <span class="issue-state"><span class="state-dot"></span>Open</span>
+            </div>
+            <h3><a href="https://github.com/microsoft/vscode/issues/350506" target="_blank" rel="noopener noreferrer">Abnormal token consumption in Copilot</a></h3>
+            <p class="issue-summary">The reporter compares repeated tasks and reports roughly 23M tokens used by Copilot versus 4.3M by another tool, alongside lower cache hit rates and longer execution time.</p>
+            <div class="issue-footer">
+              <div class="issue-meta"><span>by nijiong</span><time datetime="2026-11-26T07:19:59Z">Nov 26, 2026 · 07:19 UTC</time></div>
+              <div class="labels"><span class="label label-unassigned">No labels</span></div>
+            </div>
+          </article>
+
+          <article class="issue-card" data-search="350504 byok custom endpoint models language models view not signed in github hf6420 authentication">
+            <div class="issue-topline">
+              <span class="issue-number">#350504</span>
+              <span class="issue-state"><span class="state-dot"></span>Open</span>
+            </div>
+            <h3><a href="https://github.com/microsoft/vscode/issues/350504" target="_blank" rel="noopener noreferrer">BYOK custom-endpoint models work in chat but are absent from the Language Models view when not signed in to GitHub</a></h3>
+            <p class="issue-summary">Configured BYOK models respond in Copilot Chat but are missing from the Language Models view and the extension API when there is no active GitHub session.</p>
+            <div class="issue-footer">
+              <div class="issue-meta"><span>by hf6420</span><time datetime="2026-11-26T06:35:00Z">Nov 26, 2026 · 06:35 UTC</time></div>
+              <div class="labels"><span class="label label-unassigned">No labels</span></div>
+            </div>
+          </article>
+
+          <article class="issue-card" data-search="350502 remote agent host messages never start synced skill folder large data tunnel connection stalls bug agent-host dmitrivMS">
+            <div class="issue-topline">
+              <span class="issue-number">#350502</span>
+              <span class="issue-state"><span class="state-dot"></span>Open</span>
+            </div>
+            <h3><a href="https://github.com/microsoft/vscode/issues/350502" target="_blank" rel="noopener noreferrer">Remote agent host: messages never start when a synced skill folder contains large data, and the tunnel connection stalls</a></h3>
+            <p class="issue-summary">Large non-skill files in a synced skill folder can stall transfers over Remote Tunnels, preventing remote agent messages from starting and repeatedly disconnecting the tunnel.</p>
+            <div class="issue-footer">
+              <div class="issue-meta"><span>by dmitrivMS</span><time datetime="2026-11-26T06:12:34Z">Nov 26, 2026 · 06:12 UTC</time></div>
+              <div class="labels"><span class="label label-bug">bug</span><span class="label label-agent">agent-host</span></div>
+            </div>
+          </article>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>No issues match your search.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Sentinel issue dashboard</span>
+      <span>Source: GitHub Issues API</span>
+    </footer>
+  </body>
+</html>

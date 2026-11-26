@@ -8,6 +8,15 @@
                 "-ic",
                 "node /mnt/c/Users/sdajq/Repos/holbertonschool-agentic_ai/agentic-ai/04_mcp/mcp_server.js"
             ]
+        },
+        "sentinel-server": {
+            "type": "local",
+            "command": "wsl.exe",
+            "args": [
+                "bash",
+                "-ic",
+                "node agentic-ai/05_sentinel/mcp_server.js"
+            ]
         }
     }
 }
